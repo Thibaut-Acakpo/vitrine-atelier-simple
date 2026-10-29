@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suivre ma réparation — Atelier Maintenance Cotonou</title>
+  <meta name="description" content="Entrez votre numéro de fiche pour connaître l'état de votre réparation en temps réel." />
+  <link rel="canonical" href="https://www.atelier-maintenance.bj/suivi.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html"><span class="brand-mark">AM</span>Atelier Maintenance</a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#avis">Avis</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="suivi.html" aria-current="page">Suivre ma réparation</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary" href="contact.html">Déposer un appareil</a>
+    </div>
+  </header>
+
+  <nav class="breadcrumb container" aria-label="Fil d'Ariane">
+    <ol><li><a href="index.html">Accueil</a></li><li aria-current="page">Suivre ma réparation</li></ol>
+  </nav>
+
+  <main id="contenu">
+    <section class="page-hero container">
+      <p class="eyebrow">Suivi en direct</p>
+      <h1>Où en est mon appareil ?</h1>
+      <p class="lead">Entrez le numéro de fiche reçu par SMS ou email (ex. REP-2026-0184).</p>
+    </section>
+
+    <section class="section" style="padding-top:1rem">
+      <div class="container" style="max-width:640px">
+        <form id="tracking-form" class="card" style="display:flex; gap:0.8rem; flex-wrap:wrap; align-items:flex-end">
+          <div class="form-field" style="flex:1; min-width:220px; margin-bottom:0">
+            <label for="tracking-code">Numéro de fiche</label>
+            <input type="text" id="tracking-code" name="tracking-code" placeholder="REP-2026-0184" autocomplete="off" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Vérifier</button>
+        </form>
+
+        <p id="tracking-loading" hidden style="margin-top:1.2rem; color:var(--ink-faint); font-size:0.9rem">Recherche de votre fiche…</p>
+        <p id="tracking-error" hidden role="alert" style="margin-top:1.2rem; color:var(--accent-dark); background:var(--accent-tint); padding:0.9em 1.1em; border-radius:var(--radius-s)"></p>
+        <div id="tracking-result" hidden style="margin-top:1.2rem"></div>
+
+        <p class="form-hint" style="margin-top:1.6rem">
+          Pas de numéro de fiche ? Contactez-nous sur <a href="https://wa.me/22990123456" target="_blank" rel="noopener">WhatsApp</a>
+          ou au <a href="tel:+22990123456">+229 90 12 34 56</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>Atelier Maintenance</h4><p style="color:#9fb6b1; font-size:0.9rem">Réparation de téléphones et ordinateurs à Cotonou.</p></div>
+      <div><h4>Navigation</h4><ul class="footer-list"><li><a href="index.html#services">Services</a></li><li><a href="index.html#avis">Avis</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="suivi.html">Suivre ma réparation</a></li></ul></div>
+      <div><h4>Atelier</h4><ul class="footer-list"><li><a href="contact.html">Contact</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
+      <div><h4>Contact</h4><ul class="footer-list"><li><a href="tel:+22990123456">+229 90 12 34 56</a></li><li><a href="mailto:contact@atelier-maintenance.bj">contact@atelier-maintenance.bj</a></li><li>Cadjehoun, Cotonou</li></ul></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Atelier Maintenance. Tous droits réservés.</span><span><a href="confidentialite.html">Politique de confidentialité</a></span></div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/suivi.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
